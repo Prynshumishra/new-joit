@@ -38,7 +38,7 @@ export function ClientSpotlightSection() {
             <div className="relative aspect-[16/9] overflow-hidden bg-zinc-900 rounded-sm w-full">
               {/* Background Image */}
               <Image 
-                src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?auto=format&fit=crop&q=80&w=1600" 
+                src="/client.webp" 
                 alt="Client Spotlight Video"
                 fill
                 unoptimized
@@ -57,14 +57,14 @@ export function ClientSpotlightSection() {
                 
                 {/* Person 1 */}
                 <div className="w-1/2 relative border-t-2 border-[#ff5a00] pt-4 2xl:pt-6">
-                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Chris Kempczinski</h3>
-                  <p className="text-gray-300 text-sm 2xl:text-lg">Chairman & Chief Executive Officer, McDonald's</p>
+                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Sri Silpa Polisetti</h3>
+                  <p className="text-gray-300 text-sm 2xl:text-lg">Chairman & Chief Executive Officer, Joy IT Solutions</p>
                 </div>
                 
                 {/* Person 2 */}
                 <div className="w-1/2 relative border-t-2 border-[#ff5a00] pt-4 2xl:pt-6">
-                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Julie Sweet</h3>
-                  <p className="text-gray-300 text-sm 2xl:text-lg">Chair & Chief Executive Officer, Joy IT Solutions</p>
+                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Chris Kempczinski</h3>
+                  <p className="text-gray-300 text-sm 2xl:text-lg">Chair & Chief Executive Officer, Oberoi World</p>
                 </div>
 
               </div>

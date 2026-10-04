@@ -5,34 +5,34 @@ import { WorksWheel, type WorksWheelItem } from "@/components/ui/works-wheel";
 // Using verified Unsplash stock images instead of the crafterui CDN
 const INDUSTRIES: WorksWheelItem[] = [
   {
-    title: "Financial Services",
-    image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=1600",
+    title: "Fintech Services",
+    image: "/fintech.webp",
     href: "#financial-services",
   },
   {
     title: "Healthcare",
-    image: "https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&q=80&w=1600",
+    image: "/healthcare.webp",
     href: "#healthcare",
   },
   {
     title: "Retail & Consumer",
-    image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=1600",
+    image: "/consumer.png",
     href: "#retail",
   },
   {
     title: "Manufacturing",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600",
+    image: "/manufacturing.png",
     href: "#manufacturing",
   },
   {
     title: "Telecommunications",
-    image: "https://images.unsplash.com/photo-1558470598-a5dda9640f68?auto=format&fit=crop&q=80&w=1600",
+    image: "/telecommunications.jpg",
     href: "#telecom",
   },
   { 
-    title: "Public Service", 
-    image: "https://images.unsplash.com/photo-1550684848-76ce242ce1cd?auto=format&fit=crop&q=80&w=1600", 
-    href: "#public-service" 
+    title: "Transportation", 
+    image: "/transport.png", 
+    href: "#transportation" 
   }
 ];
 

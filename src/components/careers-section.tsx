@@ -57,7 +57,7 @@ export function CareersSection() {
               style={{ width: imageWidth, height: imageHeight }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1600" 
+                src="/career.jpg" 
                 alt="Careers team" 
                 className="w-full h-full object-cover object-center"
               />

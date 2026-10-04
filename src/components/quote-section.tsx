@@ -8,7 +8,7 @@ export function QuoteSection() {
           <div className="relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] bg-[#d3bca3] overflow-hidden">
             {/* Using a standard img tag to avoid Next.js domain config requirements for the placeholder */}
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" 
+              src="/clientimg.jpg" 
               alt="Julie Sweet"
               className="w-full h-full object-cover object-top"
             />
