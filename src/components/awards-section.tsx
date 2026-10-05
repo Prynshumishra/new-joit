@@ -7,27 +7,27 @@ import { cn } from "@/lib/utils";
 
 const AWARDS = [
   {
-    id: "blue",
+    id: "orange",
     title: "A Leader in Reinvention",
-    description: "Recognized by Forbes as the top company on its World’s Best Management Consulting Firms list and named one of The Wall Street Journal’s Top 30 Best Companies for the Future, reflecting the talent, innovation and agility that make Accenture the trusted reinvention partner for clients worldwide.",
-    color: "bg-[#0041F0]",
-    scrollRange: [0.10, 0.45], // Continuous scroll range
+    description: "Recognized by leading industry analysts as a top company for digital innovation, reflecting the talent and agility that make Joy IT Solutions the trusted transformation partner for clients worldwide.",
+    color: "bg-[#f97316]",
+    scrollRange: [0.10, 0.45],
     baseXOffset: -250, // Left
   },
   {
-    id: "red",
+    id: "lightblue",
     title: "A Great Place To Work",
-    description: "We are very proud to have earned the No. 4 spot on the Great Place To Work® list of the World’s Best Workplaces™, our highest-ever ranking on this prestigious list.\n\nThis recognition is especially meaningful because it is based on feedback from our people worldwide.",
-    color: "bg-[#E60028]",
-    scrollRange: [0.35, 0.75], // Continuous scroll range
+    description: "We are very proud to be recognized as a Great Place To Work®, highlighting our commitment to fostering an inclusive, innovative, and supportive environment.\n\nThis recognition is especially meaningful because it is based on feedback from our people worldwide.",
+    color: "bg-[#0ea5e9]",
+    scrollRange: [0.35, 0.75],
     baseXOffset: 250, // Right
   },
   {
-    id: "purple",
+    id: "darkgray",
     title: "A Trusted Industry Leader",
-    description: "Accenture is a Leader in the 2025 Gartner Magic Quadrant for Public Cloud IT Transformation Services.\n\nAccenture placed highest on the Ability to Execute axis in the Magic Quadrant report, which assessed a total of 15 PCITS providers.",
-    color: "bg-[#4A0082]",
-    scrollRange: [0.65, 1.0], // Continuous scroll range
+    description: "Joy IT Solutions is a Leader in Global Cloud Transformation Services. We placed highest on the Ability to Execute axis in recent industry reports.",
+    color: "bg-zinc-800",
+    scrollRange: [0.65, 1.0],
     baseXOffset: -200, // Left
   }
 ];
@@ -130,7 +130,7 @@ export function AwardsSection() {
                     onMouseEnter={() => setHoveredCard(award.id)}
                     onMouseLeave={() => setHoveredCard(null)}
                     className={cn(
-                      "cursor-pointer overflow-hidden shadow-2xl flex flex-col justify-end relative rounded-sm w-[75vw] md:w-[60vw] lg:w-[420px] 2xl:w-[28vw] min-h-[350px] lg:aspect-square",
+                      "cursor-pointer overflow-hidden shadow-2xl flex flex-col justify-end relative rounded-sm w-[75vw] md:w-[60vw] lg:w-[420px] 2xl:w-[28vw] min-h-[400px] lg:aspect-square",
                       award.color
                     )}
                   >
@@ -157,10 +157,10 @@ export function AwardsSection() {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="text-white text-sm md:text-[15px] 2xl:text-2xl leading-relaxed opacity-90 space-y-4 mb-6 md:mb-8 2xl:mb-10 whitespace-pre-line">
+                        <div className="text-white text-sm md:text-[15px] 2xl:text-2xl leading-relaxed opacity-90 space-y-4 whitespace-pre-line">
                           {award.description}
                         </div>
-                        <a href="#" className="group flex items-center font-bold text-white text-xs md:text-sm 2xl:text-xl">
+                        <a href="#" className="group flex items-center font-bold text-white text-xs md:text-sm 2xl:text-xl pt-6 md:pt-8 2xl:pt-10">
                           See related awards <ChevronRight className="w-4 h-4 2xl:w-6 2xl:h-6 text-white ml-2 2xl:ml-4" />
                         </a>
                       </motion.div>
