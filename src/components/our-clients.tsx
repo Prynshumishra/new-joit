@@ -24,10 +24,10 @@ export default function OurClients() {
         
         {/* Header */}
         <div className="text-center mb-24 max-w-7xl mx-auto">
-          <h6 className="text-[#ff5a00] font-bold tracking-widest uppercase text-sm 2xl:text-lg mb-4 2xl:mb-6">
+          <h6 className="text-[#f97316] font-bold tracking-widest uppercase text-sm mb-4 2xl:mb-6">
             Our Clients
           </h6>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl max-w-5xl mx-auto font-bold leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl max-w-5xl mx-auto font-bold leading-tight">
             Brands Across the Globe Choose Joy IT Solutions
           </h2>
         </div>

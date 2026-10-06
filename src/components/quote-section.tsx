@@ -17,10 +17,10 @@ export function QuoteSection() {
 
         {/* Right Side (Quote) */}
         <div className="w-full lg:w-7/12 flex flex-col justify-center">
-          <h2 className="text-white text-2xl md:text-4xl lg:text-[32px] xl:text-4xl 2xl:text-5xl font-bold leading-tight mb-6 md:mb-8 2xl:mb-12">
+          <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-medium leading-tight mb-6 md:mb-8 2xl:mb-12">
             “Companies will have a greater technology landscape, but we need to completely change the narrative to inspire people to paint the future. It is human in the lead, not human in the loop.”
           </h2>
-          <p className="text-[#ff5a00] text-base md:text-lg lg:text-xl 2xl:text-3xl font-bold uppercase tracking-widest">
+          <p className="text-[#f97316] text-base md:text-lg font-bold uppercase tracking-widest">
             Julie Sweet
           </p>
         </div>

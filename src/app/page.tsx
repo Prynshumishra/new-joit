@@ -43,16 +43,16 @@ export default function Home() {
             playsInline
             className="hero_custom__background min-h-full min-w-full object-cover min-h-[850px]"
           >
-            <source src="/VIDEO.mp4" type="video/mp4" />
+            <source src="https://ik.imagekit.io/zvwwmpviq/VIDEO.mp4" type="video/mp4" />
           </video>
           
           {/* Dark overlay for readability */}
-          <div className="absolute inset-0 bg-black/50 z-10" />
+          <div className="absolute inset-0 bg-black/30 z-10" />
         </div>
       </div>
 
       {/* Content Container */}
-      <div className="relative z-20 w-full px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center h-full pt-24 xl:pt-32">
+      <div className="relative z-20 w-full px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-24 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center h-full pt-24 xl:pt-32">
         
         {/* Left Side (Massive Headline) - Scroll wrapper */}
         {/* Expanded to 8 columns to give the massive text room to breathe! */}
@@ -79,29 +79,23 @@ export default function Home() {
             className="flex flex-col items-start text-left text-white lg:pl-8 w-[90%] sm:w-[80%] md:w-[450px] lg:w-fit ml-auto"
           >
             {/* Orange Accent Line */}
-            <div className="w-12 h-1 2xl:w-16 2xl:h-2 bg-[#ff5a00] mb-4" />
+            <div className="w-12 h-1 2xl:w-16 2xl:h-2 bg-[#f97316] mb-4" />
             
-            <h3 className="text-2xl xl:text-3xl 2xl:text-5xl font-bold mb-2 2xl:mb-4 w-full">Shaping tomorrow, today</h3>
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 2xl:mb-4 w-full">Shaping tomorrow, today</h3>
             
-            <p className="text-[17px] xl:text-xl 2xl:text-2xl text-gray-200 mb-2 2xl:mb-4 leading-relaxed max-w-md 2xl:max-w-2xl w-full text-justify">
+            <p className="text-base md:text-lg text-gray-200 mb-2 2xl:mb-4 leading-relaxed max-w-md 2xl:max-w-2xl w-full text-justify">
               We help businesses solve complex technology challenges through expert services, intelligent solutions, and the right talent.
             </p>
             
-            <div className="flex flex-col items-start space-y-3 w-fit mt-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 w-fit mt-4">
               <Link 
                 href="#contact" 
-                className="group flex items-center justify-between px-6 py-3 2xl:px-8 2xl:py-4 bg-[#ff5a00] text-white text-xs 2xl:text-sm font-bold uppercase tracking-widest hover:bg-[#e04f00] transition-colors w-auto"
+                className="group flex items-center justify-between bg-transparent text-white hover:text-gray-300 text-base md:text-xl font-bold tracking-widest transition-colors w-auto"
               >
                 Talk to an Expert
-                <ChevronRight className="w-4 h-4 text-white ml-8 2xl:ml-12 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
-              </Link>
-              
-              <Link 
-                href="#services" 
-                className="group flex items-center justify-between px-6 py-3 2xl:px-8 2xl:py-4 bg-transparent border border-white/30 text-white text-xs 2xl:text-sm font-bold uppercase tracking-widest hover:border-white/80 hover:bg-white/5 transition-all w-auto"
-              >
-                Explore Our Services
-                <ChevronRight className="w-4 h-4 text-white ml-8 2xl:ml-12 transition-transform group-hover:translate-x-1" strokeWidth={2.5} />
+                <span className="bg-[#f97316] p-2 ml-4 flex items-center justify-center transition-transform group-hover:translate-x-2">
+                  <ArrowRight className="w-4 h-4 text-white" strokeWidth={2.5} />
+                </span>
               </Link>
             </div>
           </motion.div>
@@ -121,10 +115,6 @@ export default function Home() {
 
       {/* Quote Section */}
       <QuoteSection /> 
-
-     
-
-      
 
       {/* Works Wheel Section */}
       <WorksWheelSection />

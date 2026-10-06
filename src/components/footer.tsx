@@ -33,7 +33,7 @@ export function Footer() {
             <Link 
               key={link} 
               href="#" 
-              className="text-gray-100 hover:text-[#ff5a00] hover:underline text-sm 2xl:text-base font-medium transition-colors"
+              className="text-gray-100 hover:text-[#f97316] hover:underline text-sm 2xl:text-base font-medium transition-colors"
             >
               {link}
             </Link>

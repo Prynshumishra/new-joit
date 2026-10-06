@@ -68,7 +68,7 @@ export function Header() {
               <NavigationMenuItem>
                 <NavigationMenuLink 
                   render={<Link href="/services" />}
-                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-lg xl:text-2xl 2xl:text-xl font-semibold")}
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-base lg:text-lg ")}
                 >
                   Services
                 </NavigationMenuLink>
@@ -77,14 +77,14 @@ export function Header() {
               <NavigationMenuItem>
                 <NavigationMenuLink 
                   render={<Link href="/industries" />}
-                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-lg xl:text-2xl 2xl:text-xl font-semibold")}
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-base lg:text-lg ")}
                 >
                   Industries
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[state=open]:bg-transparent data-[state=open]:text-white text-lg xl:text-2xl 2xl:text-xl font-semibold">
+                <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[state=open]:bg-transparent data-[state=open]:text-white text-base lg:text-lg ">
                   Solutions
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -95,42 +95,34 @@ export function Header() {
                         <ArrowRight className="w-8 h-8 text-white transition-transform group-hover:translate-x-2" />
                       </div>
                       
-                      <div className="flex w-full text-left">
+                      <div className="flex w-full text-left justify-between">
                         {/* Column 1: Business & Enterprise */}
-                        <div className="w-1/3 pr-12">
+                        <div className="w-1/3 pr-8">
                           <h3 className="text-zinc-400 font-normal mb-6 text-lg xl:text-xl">Business & Enterprise</h3>
-                          <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">Product Information Management</ListItem>
-                              <ListItem href="#">GRC Solutions</ListItem>
-                            </ul>
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">Enterprise Data Solutions</ListItem>
-                              <ListItem href="#">AI & Automation Solutions</ListItem>
-                            </ul>
-                          </div>
+                          <ul className="flex flex-col space-y-4">
+                            <ListItem href="#" className="whitespace-nowrap">Product Information Management</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">GRC Solutions</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Enterprise Data Solutions</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">AI & Automation Solutions</ListItem>
+                          </ul>
                         </div>
 
                         {/* Column 2: IT & Infrastructure */}
-                        <div className="w-1/3 pr-12">
+                        <div className="w-1/3 pr-8">
                           <h3 className="text-zinc-400 font-normal mb-6 text-lg xl:text-xl">IT & Infrastructure</h3>
-                          <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">Cloud Solutions</ListItem>
-                              <ListItem href="#">System Integration</ListItem>
-                            </ul>
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">Unified Communication</ListItem>
-                              <ListItem href="#">ELV System</ListItem>
-                            </ul>
-                          </div>
+                          <ul className="flex flex-col space-y-4">
+                            <ListItem href="#" className="whitespace-nowrap">Cloud Solutions</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">System Integration</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Unified Communication</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">ELV System</ListItem>
+                          </ul>
                         </div>
 
                         {/* Column 3: Security Solutions */}
-                        <div className="w-1/3 pr-12">
+                        <div className="w-1/3 pr-8">
                           <h3 className="text-zinc-400 font-normal mb-6 text-lg xl:text-xl">Security Solutions</h3>
                           <ul className="flex flex-col space-y-4">
-                            <ListItem href="#">Cybersecurity Consulting</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Cybersecurity Consulting</ListItem>
                           </ul>
                         </div>
                       </div>
@@ -140,7 +132,7 @@ export function Header() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[state=open]:bg-transparent data-[state=open]:text-white text-lg xl:text-2xl 2xl:text-xl font-semibold">
+                <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[state=open]:bg-transparent data-[state=open]:text-white text-base lg:text-lg ">
                   Who We Are
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -154,18 +146,13 @@ export function Header() {
                       <div className="flex w-full text-left">
                         <div className="w-1/2 pr-12">
                           <h3 className="text-zinc-400 font-normal mb-8 text-lg xl:text-xl">Company Overview</h3>
-                          <div className="grid grid-cols-2 gap-x-12 gap-y-6">
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">About us</ListItem>
-                              <ListItem href="#">What we do</ListItem>
-                              <ListItem href="#">Alliances and partnerships</ListItem>
-                            </ul>
-                            <ul className="flex flex-col space-y-4">
-                              <ListItem href="#">Our leadership</ListItem>
-                              <ListItem href="#">Careers</ListItem>
-                             
-                            </ul>
-                          </div>
+                          <ul className="flex flex-col space-y-4">
+                            <ListItem href="#" className="whitespace-nowrap">About us</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">What we do</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Alliances and partnerships</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Our leadership</ListItem>
+                            <ListItem href="#" className="whitespace-nowrap">Careers</ListItem>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -176,7 +163,7 @@ export function Header() {
               <NavigationMenuItem>
                 <NavigationMenuLink 
                   render={<Link href="/insights" />}
-                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-lg xl:text-2xl 2xl:text-xl font-semibold")}
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-base lg:text-lg ")}
                 >
                   Insights
                 </NavigationMenuLink>
@@ -185,7 +172,7 @@ export function Header() {
               <NavigationMenuItem>
                 <NavigationMenuLink 
                   render={<Link href="/hire" />}
-                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-lg xl:text-2xl 2xl:text-xl font-semibold")}
+                  className={cn(navigationMenuTriggerStyle(), "bg-transparent text-white hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-transparent data-[state=open]:bg-transparent text-base lg:text-lg ")}
                 >
                   Hire
                 </NavigationMenuLink>
@@ -197,7 +184,7 @@ export function Header() {
         
         {/* Right side actions - Desktop */}
         <div className="hidden lg:flex shrink-0 items-center space-x-6 ml-4">
-          <button className="bg-white text-black px-4 py-2 2xl:px-6 2xl:py-2 text-lg xl:text-2xl 2xl:text-xl font-bold hover:bg-gray-200 transition-colors">
+          <button className="bg-white text-black px-3 py-3 2xl:px-4 text-base font-semibold tracking-widest hover:bg-gray-200 transition-colors">
             Contact Us
           </button>
         </div>
@@ -265,7 +252,7 @@ const ListItem = React.forwardRef<
       <NavigationMenuLink
         render={<Link href={href || "#"} ref={ref as any} />}
         className={cn(
-          "block select-none rounded-sm leading-snug no-underline outline-none transition-colors hover:text-white hover:underline focus:text-white text-[18px] font-medium text-gray-200",
+          "block select-none rounded-sm leading-snug no-underline outline-none transition-colors hover:text-white hover:underline focus:text-white text-lg font-medium text-gray-200",
           className
         )}
         {...props}

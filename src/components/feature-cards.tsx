@@ -17,7 +17,7 @@ export function FeatureCards() {
     {
       id: 1,
       type: "Announcement",
-      title: "Joy IT Solutions launches Joy Cloud Fabric to accelerate digital transformation",
+      title: "Joy IT Solutions launches Joy Cloud Fabric",
       desc: "Joy Cloud Fabric brings together cloud engineering, cybersecurity, and DevOps to orchestrate enterprise migration from strategy through execution.",
       cta: "Expand",
       bg: "bg-[#f97316]",
@@ -30,9 +30,9 @@ export function FeatureCards() {
       title: "How CTOs can turn legacy systems into AI-powered value",
       desc: "Explore how IT leaders can modernize infrastructure, accelerate data workflows, and reinvent core systems so people and AI work together.",
       cta: "Expand",
-      bg: "bg-[#f4f4f4]",
+      bg: "bg-[#fff]",
       text: "text-black",
-      image: "/perspective.jpg"
+      image: "/cloud.png"
     },
     {
       id: 3,
@@ -40,9 +40,9 @@ export function FeatureCards() {
       title: "The CIO's guide to scalable Cloud architectures",
       desc: "How to see, control and optimize your cloud infrastructure spend at scale.",
       cta: "Explore",
-      bg: "bg-[#f4f4f4]",
-      text: "text-black",
-      image: "https://i.pinimg.com/736x/27/56/46/2756465dc952728758a71358bdc765f7.jpg",
+      bg: "bg-[#000]",
+      text: "text-white",
+      image: "/cloud-tech.webp",
       fullImage: true
     },
     {
@@ -61,7 +61,7 @@ export function FeatureCards() {
       title: "Navigating the future of supply chain tech",
       desc: "Building resilience and agility into global supply chains with Joy IT Solutions' advanced data analytics platforms.",
       cta: "Expand",
-      bg: "bg-[#0ea5e9]",
+      bg: "bg-[#0152d7]",
       text: "text-white",
       image: null
     },
@@ -71,7 +71,7 @@ export function FeatureCards() {
       title: "The future of custom software in operations",
       desc: "Bespoke software solutions are moving into complex, integrated enterprise ecosystems. Here is how they will reshape agility.",
       cta: "Expand",
-      bg: "bg-[#f4f4f4]",
+      bg: "bg-[#fff]",
       text: "text-black",
       image: "/perspective.jpg",
       isGrayscale: true
@@ -92,9 +92,9 @@ export function FeatureCards() {
       title: "Cloud-Native Infrastructure in the enterprise",
       desc: "How serverless technologies and Kubernetes are finally ready for widespread enterprise adoption.",
       cta: "Expand",
-      bg: "bg-[#f4f4f4]",
-      text: "text-black",
-      image: "https://i.pinimg.com/736x/27/56/46/2756465dc952728758a71358bdc765f7.jpg",
+      bg: "bg-[#000]",
+      text: "text-white",
+      image: "/professional-team-meeting.avif",
       fullImage: true
     }
   ];
@@ -119,14 +119,14 @@ export function FeatureCards() {
                     unoptimized
                     className="object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-black/30" />
+                  <div className="absolute inset-0 bg-black/40 " />
                 </div>
               )}
               
               {/* Top Section (Static) */}
               <div className={`p-6 xl:p-8 pb-0 shrink-0 z-10 ${card.fullImage ? 'bg-transparent' : card.bg}`}>
-                <div className="text-[10px] xl:text-xs font-bold tracking-wider uppercase mb-2 xl:mb-4">{card.type}</div>
-                <h3 className="text-lg md:text-[22px] font-bold leading-snug">
+                <div className="text-xs font-bold tracking-wider uppercase mb-2 xl:mb-4">{card.type}</div>
+                <h3 className="text-xl md:text-2xl font-bold leading-snug">
                   {card.title}
                 </h3>
               </div>
@@ -136,10 +136,10 @@ export function FeatureCards() {
                 
                 {/* Back (Text) - Starts hidden, slides in */}
                 <div className={`absolute inset-0 ${card.bg} p-6 xl:p-8 pt-0 flex flex-col justify-between z-0 transition-transform duration-100 ease-out ${card.id % 2 === 0 ? '-translate-x-full group-hover:translate-x-0' : 'translate-y-full group-hover:translate-y-0'}`}>
-                  <p className="text-sm xl:text-[17px] leading-relaxed md:line-clamp-none line-clamp-6">
+                  <p className="text-sm md:text-base leading-relaxed md:line-clamp-none line-clamp-6">
                     {card.desc}
                   </p>
-                  <div className="flex items-center gap-2 font-bold uppercase text-xs xl:text-sm mt-auto pt-2">
+                  <div className="flex items-center gap-2 font-bold uppercase text-sm mt-auto pt-2">
                     {card.cta} <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export function FeatureCards() {
                         alt={card.title} 
                         fill 
                         unoptimized
-                        className={`object-contain object-bottom ${card.isGrayscale ? 'grayscale' : ''}`}
+                        className={`object-contain object-bottom`}
                       />
                     )}
                   </div>

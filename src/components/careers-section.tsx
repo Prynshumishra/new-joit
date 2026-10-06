@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 export function CareersSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -69,20 +69,19 @@ export function CareersSection() {
               className="w-full flex-1 flex flex-col justify-start lg:justify-center relative z-10 pt-8 md:pt-12 pb-2 lg:py-0 lg:pl-8 xl:pl-16 2xl:pl-24"
               style={{ opacity: textOpacity, y: textY }}
             >
-              <div className="text-[12px] md:text-sm 2xl:text-[16px] font-bold tracking-wider uppercase mb-4 2xl:mb-6 text-[#ff5a00]">
+              <div className="text-xs md:text-sm font-bold tracking-wider uppercase mb-4 2xl:mb-6 text-[#f97316]">
                 Careers
               </div>
-              <h3 className="text-white text-3xl md:text-5xl lg:text-[32px] xl:text-[40px] 2xl:text-[4vw] font-bold leading-[1.1] mb-4 md:mb-6 2xl:mb-8 tracking-tight">
+              <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-4 md:mb-6 2xl:mb-8 tracking-tight">
                 Build a career that's as exciting as the world we're shaping
               </h3>
-              <p className="text-gray-300 text-base md:text-xl lg:text-[17px] 2xl:text-3xl mb-8 md:mb-10 2xl:mb-16 leading-relaxed font-serif pr-2 lg:pr-8 2xl:pr-16">
+              <p className="text-gray-300 text-base md:text-lg mb-4 md:mb-6 2xl:mb-8 leading-relaxed pr-2 lg:pr-8 2xl:pr-16">
                 Grow personally and professionally in a global company that helps you unlock your full potential.
               </p>
-              <a href="#" className="group flex items-center font-bold text-white w-fit text-sm 2xl:text-xl uppercase tracking-widest">
+              <a href="#" className="group flex items-center font-bold text-white w-fit text-sm tracking-widest">
                 Join us 
-                <span className="bg-[#ff5a00] p-1.5 2xl:p-3 ml-3 2xl:ml-5 flex items-center justify-center transition-transform group-hover:translate-x-1">
-                  <ChevronRight className="w-4 h-4 2xl:w-6 2xl:h-6 text-white" strokeWidth={3} />
-                </span>
+                <span className="bg-[#f97316] p-1.5 ml-3 flex items-center justify-center transition-transform group-hover:translate-x-1">
+                   <ArrowRight className="w-4 h-4 text-white" strokeWidth={2.5} />                </span>
               </a>
             </motion.div>
 

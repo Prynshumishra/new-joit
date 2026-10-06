@@ -18,7 +18,7 @@ const AWARDS = [
     id: "lightblue",
     title: "A Great Place To Work",
     description: "We are very proud to be recognized as a Great Place To Work®, highlighting our commitment to fostering an inclusive, innovative, and supportive environment.\n\nThis recognition is especially meaningful because it is based on feedback from our people worldwide.",
-    color: "bg-[#0ea5e9]",
+    color: "bg-[#0152d7]",
     scrollRange: [0.35, 0.75],
     baseXOffset: 250, // Right
   },
@@ -26,7 +26,7 @@ const AWARDS = [
     id: "darkgray",
     title: "A Trusted Industry Leader",
     description: "Joy IT Solutions is a Leader in Global Cloud Transformation Services. We placed highest on the Ability to Execute axis in recent industry reports.",
-    color: "bg-zinc-800",
+    color: "bg-[#015d27]",
     scrollRange: [0.65, 1.0],
     baseXOffset: -200, // Left
   }
@@ -73,7 +73,7 @@ export function AwardsSection() {
             style={{ opacity: textOpacity }}
             className="text-center px-6 w-full max-w-[1200px] 2xl:max-w-[70vw]"
           >
-            <h2 className="text-white text-5xl md:text-6xl lg:text-[80px] 2xl:text-[6vw] font-bold tracking-tight leading-tight">
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
               Global recognition and<br/>awards
             </h2>
           </motion.div>
@@ -144,7 +144,7 @@ export function AwardsSection() {
                     <div className="relative z-10 p-6 md:p-8 2xl:p-12 h-full flex flex-col justify-end">
                       <h3 className={cn(
                         "text-white font-medium font-serif transition-all duration-300",
-                        (isHovered || isMobileOrTablet) ? "text-lg md:text-xl 2xl:text-3xl mb-4 2xl:mb-6" : "text-xl md:text-[22px] 2xl:text-4xl"
+                        (isHovered || isMobileOrTablet) ? "text-xl md:text-2xl mb-4 2xl:mb-6" : "text-2xl md:text-3xl"
                       )}>
                         {award.title}
                       </h3>
@@ -157,10 +157,10 @@ export function AwardsSection() {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="text-white text-sm md:text-[15px] 2xl:text-2xl leading-relaxed opacity-90 space-y-4 whitespace-pre-line">
+                        <div className="text-white text-base md:text-lg leading-relaxed opacity-90 space-y-4 whitespace-pre-line">
                           {award.description}
                         </div>
-                        <a href="#" className="group flex items-center font-bold text-white text-xs md:text-sm 2xl:text-xl pt-6 md:pt-8 2xl:pt-10">
+                        <a href="#" className="group flex items-center font-bold text-white text-sm pt-6 md:pt-8 2xl:pt-10">
                           See related awards <ChevronRight className="w-4 h-4 2xl:w-6 2xl:h-6 text-white ml-2 2xl:ml-4" />
                         </a>
                       </motion.div>

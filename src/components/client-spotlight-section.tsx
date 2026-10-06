@@ -56,15 +56,15 @@ export function ClientSpotlightSection() {
               <div className="hidden sm:flex absolute bottom-0 left-0 right-0 p-8 2xl:p-12 pt-24 bg-gradient-to-t from-black via-black/80 to-transparent flex-row justify-between items-end gap-6 2xl:gap-10">
                 
                 {/* Person 1 */}
-                <div className="w-1/2 relative border-t-2 border-[#ff5a00] pt-4 2xl:pt-6">
-                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Sri Silpa Polisetti</h3>
-                  <p className="text-gray-300 text-sm 2xl:text-lg">Chairman & Chief Executive Officer, Joy IT Solutions</p>
+                <div className="w-1/2 relative border-t-2 border-[#f97316] pt-4 2xl:pt-6">
+                  <h3 className="text-white text-2xl md:text-3xl font-bold mb-1 2xl:mb-3">Sri Silpa Polisetti</h3>
+                  <p className="text-gray-300 text-sm">Chairman & Chief Executive Officer, Joy IT Solutions</p>
                 </div>
                 
                 {/* Person 2 */}
-                <div className="w-1/2 relative border-t-2 border-[#ff5a00] pt-4 2xl:pt-6">
-                  <h3 className="text-white text-3xl 2xl:text-4xl font-bold mb-1 2xl:mb-3">Chris Kempczinski</h3>
-                  <p className="text-gray-300 text-sm 2xl:text-lg">Chair & Chief Executive Officer, Oberoi World</p>
+                <div className="w-1/2 relative border-t-2 border-[#f97316] pt-4 2xl:pt-6">
+                  <h3 className="text-white text-2xl md:text-3xl font-bold mb-1 2xl:mb-3">Chris Kempczinski</h3>
+                  <p className="text-gray-300 text-sm">Chair & Chief Executive Officer, Oberoi World</p>
                 </div>
 
               </div>
@@ -72,11 +72,11 @@ export function ClientSpotlightSection() {
 
             {/* Mobile Text (Below Image) */}
             <div className="flex sm:hidden flex-col gap-6 mt-6 pl-2">
-              <div className="relative border-t-2 border-[#ff5a00] pt-4">
+              <div className="relative border-t-2 border-[#f97316] pt-4">
                 <h3 className="text-white text-2xl font-bold mb-1">Chris Kempczinski</h3>
                 <p className="text-gray-300 text-xs">Chairman & Chief Executive Officer, McDonald's</p>
               </div>
-              <div className="relative border-t-2 border-[#ff5a00] pt-4">
+              <div className="relative border-t-2 border-[#f97316] pt-4">
                 <h3 className="text-white text-2xl font-bold mb-1">Julie Sweet</h3>
                 <p className="text-gray-300 text-xs">Chair & Chief Executive Officer, Joy IT Solutions</p>
               </div>
@@ -98,10 +98,10 @@ export function ClientSpotlightSection() {
                 key={index} 
                 className="flex flex-col gap-6 2xl:gap-8 group cursor-pointer border-t border-gray-800 py-8 2xl:py-10 last:border-b"
               >
-                <h3 className="text-white text-[22px] 2xl:text-[28px] font-medium leading-snug group-hover:text-[#ff5a00] transition-colors">
+                <h3 className="text-white text-xl md:text-2xl font-medium leading-snug group-hover:text-[#f97316] transition-colors">
                   {spotlight.title}
                 </h3>
-                <div className="flex items-center text-white text-sm 2xl:text-lg font-bold tracking-wide">
+                <div className="flex items-center text-white text-sm font-bold tracking-wide">
                   Explore <ChevronRight className="w-4 h-4 2xl:w-6 2xl:h-6 ml-2 2xl:ml-3 transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
